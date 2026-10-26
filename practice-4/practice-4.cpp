@@ -1,10 +1,14 @@
 #include <iostream>
 #include <string>
 #include "converters.h"
+#include <windows.h>
 
 using namespace std;
 
 int main() {
+    SetConsoleCP(65001);
+    SetConsoleOutputCP(65001);
+
     int choice = 0;
 
     while (choice != 4) {

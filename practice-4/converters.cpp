@@ -43,14 +43,15 @@ double convertLength(double value, int direction) {
         return value / 3.28; // Фути в метри
     }
     return -1.0;
+}
 
         // Конвертер температури
-double convertTemperature(double value, int direction) {
-    if (direction == 1) {
-        return (value * 1.8) + 32; // Цельсій в Фаренгейт
-    } else if (direction == 2) {
-        return (value - 32) / 1.8; // Фаренгейт в Цельсій
-    }
+    double convertTemperature(double value, int direction){
+        if (direction == 1) {
+            return (value * 1.8) + 32; // Цельсій в Фаренгейт
+        }
+        else if (direction == 2) {
+            return (value - 32) / 1.8; // Фаренгейт в Цельсій
+        }
     return -999.0;
-}
 }
